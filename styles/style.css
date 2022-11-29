@@ -99,11 +99,16 @@
 }
 
 /* Выше стили для HEADER*/
-.two-columns {
-  margin: 100px auto 0;
+.description {
   width: 80%;
+  margin: auto;
+}
+
+.two_colums__row {
   display: flex;
   justify-content: space-between;
+}
+.two-columns {
 }
 
 .two-columns__brief {
@@ -143,10 +148,6 @@
   padding-bottom: 30px;
 }
 
-.wrap_digits {
-  margin-top: 100px;
-}
-
 .digits_title__wrap {
   width: 60%;
   margin: auto;
@@ -171,17 +172,18 @@
   margin: 0;
 }
 
-.digits_table_wrap {
-  display: flex;
+.digits_table {
   width: 1100px;
   margin: auto;
 }
 
-.digits_table__size {
-  width: 250px;
+.digits_table__row {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cell {
+  width: 250px;
   list-style-type: none;
 }
 
@@ -189,11 +191,20 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
+  margin: 0;
 }
 
 .text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  padding-top: 20px;
+  margin: 0;
+}
+
+.digits_wrap {
+  margin-top: 60px;
+}
+
+.marg_l {
+  margin-top: 100px;
 }

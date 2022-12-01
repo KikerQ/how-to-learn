@@ -34,7 +34,7 @@
   background-repeat: no-repeat;
 }
 
-.logo_place-header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -46,11 +46,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 64px;
+  margin: 0 64px 0;
   z-index: 3;
-}
-
-.header__title-text {
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -62,9 +59,6 @@
   left: 64px;
   bottom: 30px;
   z-index: 3;
-}
-
-.header__subtitle-text {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -81,9 +75,6 @@
   bottom: 0;
   right: 0;
   z-index: 2;
-}
-
-.header__main-img {
   width: 765px;
   height: 608px;
 }
@@ -101,13 +92,14 @@
 
 /* Выше стили для HEADER*/
 .description {
-  width: 80%;
-  margin: 100px auto 0;
+  margin-top: 100px;
 }
 
 .two-columns {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -116,6 +108,7 @@
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
+  margin: 0;
 }
 
 .two-columns__main_text {
@@ -123,25 +116,21 @@
   min-width: 784px;
 }
 
-.two-columns_paragrof:first-of-type {
+.two-columns__paragraph:first-of-type {
   margin: 0;
 }
-.two-columns_paragrof {
+
+.two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.two-columns_paragrof:last-of-type {
-  margin-bottom: 0;
+  margin: 30px 0 0;
 }
 
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 .digits {
@@ -205,7 +194,7 @@
   margin-top: 100px;
 }
 
-.feynman__title_text {
+.feynman__title {
   width: 648px;
   text-align: center;
   padding-top: 100px;
@@ -215,7 +204,7 @@
   margin: 0 auto;
 }
 
-.feynman__subtitle_text {
+.feynman__subtitle {
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -231,6 +220,7 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  color: #2f80ed;
 }
 
 .kaufman {
@@ -240,42 +230,41 @@
   padding: 90px 0;
 }
 
-.table_theme-dark {
-  grid-gap: 25px;
+.table_theme_dark {
   position: relative;
   z-index: 1;
 }
 
-.section-title_theme-dark {
+.section-title_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
 }
 
-.section-subtitle_theme-dark {
+.section-subtitle_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
 }
 
-.table__cell_theme-dark {
+.table__cell_theme_dark {
   width: 200px;
   margin-top: 80px;
 }
 
-.table__heading_theme-dark {
+.table__heading_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
 }
 
-.table__text_theme-dark {
+.table__text_theme_dark {
   color: white;
   position: relative;
   z-index: 1;
 }
 
-.triangle {
+.kaufman__triangle {
   width: 877px;
   height: 877px;
   background-image: url(../images/kaufman-triangle.svg);
@@ -303,6 +292,9 @@
 }
 
 .footer__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   min-height: 250px;
 }
@@ -312,7 +304,7 @@
   position: relative;
 }
 
-.logo__place-footer {
+.logo__place_footer {
   width: 228px;
   height: 32px;
   background-image: url(../images/logo_place_footer.svg);
@@ -320,19 +312,10 @@
 
 .footer__author {
   color: white;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  margin: 0;
-}
-
-.footer__columns_info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 18px 0;
 }
 
 .footre__column-heading {
@@ -355,7 +338,7 @@
   list-style: none;
 }
 
-.footer__colunm_link {
+.footer__colunm-link {
   margin: 20px 0 16px;
   padding: 0;
 }
